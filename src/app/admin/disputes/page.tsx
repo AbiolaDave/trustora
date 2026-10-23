@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { connectDb } from "@/lib/db";
-import { Dispute } from "@/models/misc";
-import { Booking } from "@/models/booking";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { User } from "@/models/user";
-import { resolveDisputeAction } from "@/server/actions/admin";
-import { EmptyState, Flash, Money, PageHeader, StatusPill, TextArea, dateTime } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { Dispute } from "../../../models/misc";
+import { Booking } from "../../../models/booking";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { User } from "../../../models/user";
+import { resolveDisputeAction } from "../../../server/actions/admin";
+import { EmptyState, Flash, Money, PageHeader, StatusPill, TextArea, dateTime } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Disputes" };
 export const dynamic = "force-dynamic";

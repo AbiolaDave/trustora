@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { requireArtisan } from "@/lib/auth/server";
-import { getLaunchLocations, pretty } from "@/server/queries";
-import { saveArtisanProfileAction } from "@/server/actions/artisan";
-import { Field, Flash, PageHeader, TextArea } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { requireArtisan } from "../../../lib/auth/server";
+import { getLaunchLocations, pretty } from "../../../server/queries";
+import { saveArtisanProfileAction } from "../../../server/actions/artisan";
+import { Field, Flash, PageHeader, TextArea } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Your profile" };
 export const dynamic = "force-dynamic";

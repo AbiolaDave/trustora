@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { requireArtisan } from "@/lib/auth/server";
-import { NavLink } from "@/components/nav-link";
-import { resendVerificationAction } from "@/server/actions/auth";
-import { connectDb } from "@/lib/db";
-import { Service } from "@/models/service";
+import { requireArtisan } from "../../lib/auth/server";
+import { NavLink } from "../../components/nav-link";
+import { resendVerificationAction } from "../../server/actions/auth";
+import { connectDb } from "../../lib/db";
+import { Service } from "../../models/service";
 
 export default async function ArtisanLayout({ children }: { children: React.ReactNode }) {
   const { user, profile } = await requireArtisan();

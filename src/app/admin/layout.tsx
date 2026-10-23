@@ -1,5 +1,5 @@
-import { requireUser } from "@/lib/auth/server";
-import { NavLink } from "@/components/nav-link";
+import { requireUser } from "../../lib/auth/server";
+import { NavLink } from "../../components/nav-link";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   await requireUser(["admin"]); // server-side role check; pages and every admin action check again

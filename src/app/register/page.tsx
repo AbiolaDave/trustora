@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { AuthCard } from "@/components/auth-card";
-import { Field, Flash } from "@/components/ui";
-import { registerAction } from "@/server/actions/auth";
-import { first } from "@/lib/validation";
+import { AuthCard } from "../../components/auth-card";
+import { Field, Flash } from "../../components/ui";
+import { registerAction } from "../../server/actions/auth";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Create an account" };
 

@@ -1,6 +1,6 @@
-import { requireUser } from "@/lib/auth/server";
-import { NavLink } from "@/components/nav-link";
-import { resendVerificationAction } from "@/server/actions/auth";
+import { requireUser } from "../../lib/auth/server";
+import { NavLink } from "../../components/nav-link";
+import { resendVerificationAction } from "../../server/actions/auth";
 
 export default async function CustomerLayout({ children }: { children: React.ReactNode }) {
   const user = await requireUser(["customer"]);

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { EmptyState, Money, StatusPill, dateTime } from "@/components/ui";
-import type { BookingDoc } from "@/models/booking";
+import { EmptyState, Money, StatusPill, dateTime } from "./ui";
+import type { BookingDoc } from "../models/booking";
 import type { Types } from "mongoose";
 
 type B = BookingDoc & { _id: Types.ObjectId };

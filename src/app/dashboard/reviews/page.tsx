@@ -1,10 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireUser } from "@/lib/auth/server";
-import { Review } from "@/models/misc";
-import { Booking } from "@/models/booking";
-import { EmptyState, PageHeader, dateOnly } from "@/components/ui";
+import { connectDb } from "../../../lib/db";
+import { requireUser } from "../../../lib/auth/server";
+import { Review } from "../../../models/misc";
+import { Booking } from "../../../models/booking";
+import { EmptyState, PageHeader, dateOnly } from "../../../components/ui";
 
 export const metadata: Metadata = { title: "Your reviews" };
 export const dynamic = "force-dynamic";

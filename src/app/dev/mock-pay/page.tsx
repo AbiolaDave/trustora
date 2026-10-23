@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
-import { env } from "@/lib/env";
-import { mockMarkPaid } from "@/lib/payments/provider";
-import { first } from "@/lib/validation";
+import { env } from "../../../lib/env";
+import { mockMarkPaid } from "../../../lib/payments/provider";
+import { first } from "../../../lib/validation";
 
 export const dynamic = "force-dynamic";
 

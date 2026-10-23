@@ -1,15 +1,15 @@
 "use server";
-import { connectDb } from "@/lib/db";
-import { fail, done } from "@/lib/flash";
-import { requireArtisan } from "@/lib/auth/server";
-import { nairaToKobo } from "@/lib/money";
-import { serviceSchema, objectId } from "@/lib/validation";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Service, ServiceCategory } from "@/models/service";
-import { Booking } from "@/models/booking";
-import { Location } from "@/models/misc";
-import { savePrivateFile } from "@/lib/storage";
-import { SLOT_HOLDING_STATES } from "@/domain/booking-state";
+import { connectDb } from "../../lib/db";
+import { fail, done } from "../../lib/flash";
+import { requireArtisan } from "../../lib/auth/server";
+import { nairaToKobo } from "../../lib/money";
+import { serviceSchema, objectId } from "../../lib/validation";
+import { ArtisanProfile } from "../../models/artisan-profile";
+import { Service, ServiceCategory } from "../../models/service";
+import { Booking } from "../../models/booking";
+import { Location } from "../../models/misc";
+import { savePrivateFile } from "../../lib/storage";
+import { SLOT_HOLDING_STATES } from "../../domain/booking-state";
 
 const str = (f: FormData, k: string) => (f.get(k) ?? "").toString();
 

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { connectDb } from "@/lib/db";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Service } from "@/models/service";
-import { Review } from "@/models/misc";
-import { User } from "@/models/user";
-import { Rating, VerifiedBadge, Money, EmptyState, dateOnly } from "@/components/ui";
+import { connectDb } from "../../../lib/db";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { Service } from "../../../models/service";
+import { Review } from "../../../models/misc";
+import { User } from "../../../models/user";
+import { Rating, VerifiedBadge, Money, EmptyState, dateOnly } from "../../../components/ui";
 
 export const dynamic = "force-dynamic";
 

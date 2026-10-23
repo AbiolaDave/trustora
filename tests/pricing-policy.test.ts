@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { computeBreakdown } from "@/domain/pricing";
-import { refundForCancellation } from "@/domain/policy";
+import { computeBreakdown } from "../src/domain/pricing";
+import { refundForCancellation } from "../src/domain/policy";
 
 const off = { commissionBps: 0, customerFeeBps: 0, customerFeeFlatKobo: 0, customerFeeCapKobo: null };
 

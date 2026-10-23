@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { requireUser } from "@/lib/auth/server";
-import { addAddressAction, removeAddressAction, saveCustomerProfileAction } from "@/server/actions/customer";
-import { Field, Flash, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { requireUser } from "../../../lib/auth/server";
+import { addAddressAction, removeAddressAction, saveCustomerProfileAction } from "../../../server/actions/customer";
+import { Field, Flash, PageHeader } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Your profile" };
 export const dynamic = "force-dynamic";

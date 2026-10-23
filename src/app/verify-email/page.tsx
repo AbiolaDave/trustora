@@ -1,10 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { consumeToken } from "@/lib/tokens";
-import { User } from "@/models/user";
-import { AuthCard } from "@/components/auth-card";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../lib/db";
+import { consumeToken } from "../../lib/tokens";
+import { User } from "../../models/user";
+import { AuthCard } from "../../components/auth-card";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Verify your email" };
 export const dynamic = "force-dynamic";

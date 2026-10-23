@@ -1,9 +1,9 @@
-import { connectDb } from "@/lib/db";
-import { escapeRegex } from "@/lib/validation";
-import { Service, ServiceCategory } from "@/models/service";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { User } from "@/models/user";
-import { localParts } from "@/domain/availability";
+import { connectDb } from "../lib/db";
+import { escapeRegex } from "../lib/validation";
+import { Service, ServiceCategory } from "../models/service";
+import { ArtisanProfile } from "../models/artisan-profile";
+import { User } from "../models/user";
+import { localParts } from "../domain/availability";
 
 export interface SearchParams { q?: string; category?: string; area?: string; type?: string; verified?: string; min?: string; max?: string; rating?: string; date?: string; sort?: string; page?: string }
 export const PAGE_SIZE = 12;

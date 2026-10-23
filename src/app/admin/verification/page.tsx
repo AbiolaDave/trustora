@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { User } from "@/models/user";
-import { verifyArtisanAction } from "@/server/actions/admin";
-import { EmptyState, Flash, PageHeader, dateOnly } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { User } from "../../../models/user";
+import { verifyArtisanAction } from "../../../server/actions/admin";
+import { EmptyState, Flash, PageHeader, dateOnly } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Verification queue" };
 export const dynamic = "force-dynamic";

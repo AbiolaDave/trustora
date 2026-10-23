@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { Booking, BOOKING_STATES_FOR_FILTER } from "@/models/booking";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { User } from "@/models/user";
-import { Flash, Money, PageHeader, StatusPill, dateTime, statusLabel } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { Booking, BOOKING_STATES_FOR_FILTER } from "../../../models/booking";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { User } from "../../../models/user";
+import { Flash, Money, PageHeader, StatusPill, dateTime, statusLabel } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "All bookings" };
 export const dynamic = "force-dynamic";

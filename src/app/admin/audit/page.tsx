@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { connectDb } from "../../../lib/db";
-import { AuditLog } from "@/models/audit-log";
-import { User } from "@/models/user";
-import { EmptyState, PageHeader, dateTime } from "@/components/ui";
+import { AuditLog } from "../../../models/audit-log";
+import { User } from "../../../models/user";
+import { EmptyState, PageHeader, dateTime } from "../../../components/ui";
 
 export const metadata: Metadata = { title: "Audit log" };
 export const dynamic = "force-dynamic";

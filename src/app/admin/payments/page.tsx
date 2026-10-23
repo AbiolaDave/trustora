@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { Payment } from "@/models/payment";
-import { Payout } from "@/models/misc";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { markPayoutPaidAction } from "@/server/actions/admin";
-import { EmptyState, Flash, Money, PageHeader, dateOnly, dateTime } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { Payment } from "../../../models/payment";
+import { Payout } from "../../../models/misc";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { markPayoutPaidAction } from "../../../server/actions/admin";
+import { EmptyState, Flash, Money, PageHeader, dateOnly, dateTime } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Payments and payouts" };
 export const dynamic = "force-dynamic";

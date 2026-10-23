@@ -1,5 +1,5 @@
 import { createHash, randomBytes } from "node:crypto";
-import { AuthToken } from "@/models/misc";
+import { AuthToken } from "../models/misc";
 import type { Types } from "mongoose";
 
 const hash = (raw: string) => createHash("sha256").update(raw).digest("hex");

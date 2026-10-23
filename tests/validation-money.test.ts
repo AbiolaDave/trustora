@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { escapeRegex, phone, registerSchema, password } from "@/lib/validation";
-import { nairaToKobo } from "@/lib/money";
-import { isLocked } from "@/lib/auth/session";
+import { escapeRegex, phone, registerSchema, password } from "../src/lib/validation";
+import { nairaToKobo } from "../src/lib/money";
+import { isLocked } from "../src/lib/auth/session";
 
 describe("validation", () => {
   it("normalises Nigerian phone numbers and rejects junk", () => {

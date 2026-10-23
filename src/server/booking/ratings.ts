@@ -1,6 +1,6 @@
 import type { Types } from "mongoose";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Review } from "@/models/misc";
+import { ArtisanProfile } from "../../models/artisan-profile";
+import { Review } from "../../models/misc";
 
 /** Ratings are always recomputed from real, visible reviews. Never set from client input. */
 export async function recomputeRating(artisanId: Types.ObjectId) {

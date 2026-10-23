@@ -1,15 +1,15 @@
 "use server";
 import { redirect } from "next/navigation";
-import { connectDb } from "@/lib/db";
-import { env } from "@/lib/env";
-import { fail, done } from "@/lib/flash";
-import { hashPassword, verifyPassword, isLocked, LOGIN_LOCK_MINUTES, LOGIN_MAX_FAILURES } from "@/lib/auth/session";
-import { endSession, requireUser, startSession } from "@/lib/auth/server";
-import { sendEmail } from "@/lib/email";
-import { createToken, consumeToken } from "@/lib/tokens";
-import { loginSchema, password as passwordRule, registerSchema, slugify, email as emailRule } from "@/lib/validation";
-import { User } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
+import { connectDb } from "../../lib/db";
+import { env } from "../../lib/env";
+import { fail, done } from "../../lib/flash";
+import { hashPassword, verifyPassword, isLocked, LOGIN_LOCK_MINUTES, LOGIN_MAX_FAILURES } from "../../lib/auth/session";
+import { endSession, requireUser, startSession } from "../../lib/auth/server";
+import { sendEmail } from "../../lib/email";
+import { createToken, consumeToken } from "../../lib/tokens";
+import { loginSchema, password as passwordRule, registerSchema, slugify, email as emailRule } from "../../lib/validation";
+import { User } from "../../models/user";
+import { ArtisanProfile } from "../../models/artisan-profile";
 import { randomBytes } from "node:crypto";
 
 const str = (f: FormData, k: string) => (f.get(k) ?? "").toString();

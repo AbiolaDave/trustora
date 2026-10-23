@@ -1,6 +1,6 @@
-import { saveServiceAction } from "@/server/actions/artisan";
-import { Field, TextArea } from "@/components/ui";
-import { koboToNaira } from "@/lib/money";
+import { saveServiceAction } from "../server/actions/artisan";
+import { Field, TextArea } from "./ui";
+import { koboToNaira } from "../lib/money";
 
 interface Props { categories: { _id: unknown; name: string }[]; service?: { _id: unknown; title: string; description?: string | null; category: unknown; pricingModel: string; priceKobo?: number | null; travelKobo?: number | null; durationMinutes: number } }
 

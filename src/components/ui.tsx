@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { formatNaira } from "@/domain/pricing";
+import { formatNaira } from "../domain/pricing";
 
 export function Flash({ ok, error }: { ok?: string; error?: string }) {
   if (!ok && !error) return null;

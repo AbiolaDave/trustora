@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { env } from "@/lib/env";
-import { connectDb } from "@/lib/db";
-import { sweep } from "@/server/booking/workflow";
+import { env } from "../../../../lib/env";
+import { connectDb } from "../../../../lib/db";
+import { sweep } from "../../../../server/booking/workflow";
 
 export const dynamic = "force-dynamic";
 

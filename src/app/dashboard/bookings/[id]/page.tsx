@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { requireUser } from "@/lib/auth/server";
-import { getBookingFor } from "@/server/booking/access";
-import { BookingDetail } from "@/components/booking-detail";
-import { Flash } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { requireUser } from "../../../../lib/auth/server";
+import { getBookingFor } from "../../../../server/booking/access";
+import { BookingDetail } from "../../../../components/booking-detail";
+import { Flash } from "../../../../components/ui";
+import { first } from "../../../../lib/validation";
 
 export const metadata: Metadata = { title: "Booking" };
 export const dynamic = "force-dynamic";

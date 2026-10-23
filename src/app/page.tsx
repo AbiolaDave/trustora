@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { connectDb } from "@/lib/db";
-import { getSettings } from "@/lib/settings";
-import { getCategories, getLaunchLocations, pretty } from "@/server/queries";
-import { Review } from "@/models/misc";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Flash } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../lib/db";
+import { getSettings } from "../lib/settings";
+import { getCategories, getLaunchLocations, pretty } from "../server/queries";
+import { Review } from "../models/misc";
+import { ArtisanProfile } from "../models/artisan-profile";
+import { Flash } from "../components/ui";
+import { first } from "../lib/validation";
 
 export const dynamic = "force-dynamic";
 

@@ -1,6 +1,6 @@
 import { Types } from "mongoose";
-import { Notification } from "@/models/misc";
-import { User } from "@/models/user";
+import { Notification } from "../models/misc";
+import { User } from "../models/user";
 import { sendEmail } from "./email";
 import { env } from "./env";
 

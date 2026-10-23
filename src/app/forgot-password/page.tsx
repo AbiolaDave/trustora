@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { AuthCard } from "@/components/auth-card";
-import { Field, Flash } from "@/components/ui";
-import { forgotPasswordAction } from "@/server/actions/auth";
-import { first } from "@/lib/validation";
+import { AuthCard } from "../../components/auth-card";
+import { Field, Flash } from "../../components/ui";
+import { forgotPasswordAction } from "../../server/actions/auth";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Reset your password" };
 

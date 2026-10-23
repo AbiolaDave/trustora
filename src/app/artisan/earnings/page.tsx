@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireArtisan } from "@/lib/auth/server";
-import { Payout } from "@/models/misc";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { saveBankAction } from "@/server/actions/artisan";
-import { EmptyState, Field, Flash, Money, PageHeader, dateOnly } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { requireArtisan } from "../../../lib/auth/server";
+import { Payout } from "../../../models/misc";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { saveBankAction } from "../../../server/actions/artisan";
+import { EmptyState, Field, Flash, Money, PageHeader, dateOnly } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Earnings" };
 export const dynamic = "force-dynamic";

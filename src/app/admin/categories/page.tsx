@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { ServiceCategory } from "@/models/service";
-import { saveCategoryAction } from "@/server/actions/admin";
-import { Field, Flash, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { ServiceCategory } from "../../../models/service";
+import { saveCategoryAction } from "../../../server/actions/admin";
+import { Field, Flash, PageHeader } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Categories" };
 export const dynamic = "force-dynamic";

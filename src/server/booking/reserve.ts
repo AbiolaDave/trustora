@@ -1,6 +1,6 @@
 import { Types } from "mongoose";
-import { bucketsFor } from "@/domain/availability";
-import { SlotReservation } from "@/models/booking";
+import { bucketsFor } from "../../domain/availability";
+import { SlotReservation } from "../../models/booking";
 
 export class SlotTakenError extends Error {
   constructor() {

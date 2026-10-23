@@ -1,7 +1,7 @@
-import { connectDb } from "@/lib/db";
-import { getSettings } from "@/lib/settings";
-import { Location } from "@/models/misc";
-import { ServiceCategory } from "@/models/service";
+import { connectDb } from "../lib/db";
+import { getSettings } from "../lib/settings";
+import { Location } from "../models/misc";
+import { ServiceCategory } from "../models/service";
 
 export async function getCategories(featuredOnly = false) {
   await connectDb();

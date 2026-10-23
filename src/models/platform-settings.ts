@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { DEFAULT_CUSTOMER_CANCEL_TIERS } from "@/domain/policy";
+import { DEFAULT_CUSTOMER_CANCEL_TIERS } from "../domain/policy";
 
 /** Single document (key = "global"). Admin-editable; every change should write an AuditLog row. */
 const settingsSchema = new Schema(

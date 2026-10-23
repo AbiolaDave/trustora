@@ -1,13 +1,13 @@
 import { redirect } from "next/navigation";
-import { connectDb } from "@/lib/db";
-import { requireUser } from "@/lib/auth/server";
-import { getPaymentProvider } from "@/lib/payments/provider";
-import { Payment } from "@/models/payment";
-import { settleVerifiedCharge } from "@/server/booking/settle-payment";
-import { Booking } from "@/models/booking";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { notify } from "@/lib/notify";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { requireUser } from "../../../lib/auth/server";
+import { getPaymentProvider } from "../../../lib/payments/provider";
+import { Payment } from "../../../models/payment";
+import { settleVerifiedCharge } from "../../../server/booking/settle-payment";
+import { Booking } from "../../../models/booking";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { notify } from "../../../lib/notify";
+import { first } from "../../../lib/validation";
 
 export const dynamic = "force-dynamic";
 

@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { getCurrentUser } from "@/lib/auth/server";
-import { connectDb } from "@/lib/db";
-import { readPrivateFile } from "@/lib/storage";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Booking } from "@/models/booking";
+import { getCurrentUser } from "../../../../lib/auth/server";
+import { connectDb } from "../../../../lib/db";
+import { readPrivateFile } from "../../../../lib/storage";
+import { ArtisanProfile } from "../../../../models/artisan-profile";
+import { Booking } from "../../../../models/booking";
 
 export const dynamic = "force-dynamic";
 

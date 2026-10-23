@@ -1,13 +1,13 @@
-import { connectDb } from "@/lib/db";
-import { env } from "@/lib/env";
-import { POLICY_DEFAULTS } from "@/domain/policy";
-import { User } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Dispute, Message, Review } from "@/models/misc";
-import { Payment } from "@/models/payment";
-import type { BookingDoc } from "@/models/booking";
-import { artisanJobAction, artisanRespondAction, customerBookingAction, openDisputeAction, addStatementAction, payBookingAction, reviewAction, sendMessageAction, attachPhotoAction } from "@/server/actions/booking";
-import { Money, PriceBreakdown, StatusPill, TextArea, dateTime } from "@/components/ui";
+import { connectDb } from "../lib/db";
+import { env } from "../lib/env";
+import { POLICY_DEFAULTS } from "../domain/policy";
+import { User } from "../models/user";
+import { ArtisanProfile } from "../models/artisan-profile";
+import { Dispute, Message, Review } from "../models/misc";
+import { Payment } from "../models/payment";
+import type { BookingDoc } from "../models/booking";
+import { artisanJobAction, artisanRespondAction, customerBookingAction, openDisputeAction, addStatementAction, payBookingAction, reviewAction, sendMessageAction, attachPhotoAction } from "../server/actions/booking";
+import { Money, PriceBreakdown, StatusPill, TextArea, dateTime } from "./ui";
 import type { Types } from "mongoose";
 
 type B = BookingDoc & { _id: Types.ObjectId };

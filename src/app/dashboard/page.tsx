@@ -1,12 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireUser } from "@/lib/auth/server";
-import { Booking } from "@/models/booking";
-import { Notification } from "@/models/misc";
-import { BookingList } from "@/components/booking-list";
-import { Flash, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../lib/db";
+import { requireUser } from "../../lib/auth/server";
+import { Booking } from "../../models/booking";
+import { Notification } from "../../models/misc";
+import { BookingList } from "../../components/booking-list";
+import { Flash, PageHeader } from "../../components/ui";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Your dashboard" };
 export const dynamic = "force-dynamic";

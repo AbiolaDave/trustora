@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getCurrentUser } from "@/lib/auth/server";
-import { logoutAction } from "@/server/actions/auth";
-import { connectDb } from "@/lib/db";
-import { Notification } from "@/models/misc";
+import { getCurrentUser } from "../lib/auth/server";
+import { logoutAction } from "../server/actions/auth";
+import { connectDb } from "../lib/db";
+import { Notification } from "../models/misc";
 
 export async function SiteHeader() {
   const user = await getCurrentUser();

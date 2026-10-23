@@ -1,5 +1,5 @@
 import mongoose, { Schema, type InferSchemaType, type Model } from "mongoose";
-import { BOOKING_STATES } from "@/domain/booking-state";
+import { BOOKING_STATES } from "../domain/booking-state";
 
 const bookingSchema = new Schema(
   {

@@ -1,12 +1,12 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireArtisan } from "@/lib/auth/server";
-import { Service } from "@/models/service";
-import { getCategories } from "@/server/queries";
-import { ServiceForm } from "@/components/service-form";
-import { Flash, PageHeader } from "@/components/ui";
-import { first, objectId } from "@/lib/validation";
+import { connectDb } from "../../../../lib/db";
+import { requireArtisan } from "../../../../lib/auth/server";
+import { Service } from "../../../../models/service";
+import { getCategories } from "../../../../server/queries";
+import { ServiceForm } from "../../../../components/service-form";
+import { Flash, PageHeader } from "../../../../components/ui";
+import { first, objectId } from "../../../../lib/validation";
 
 export const metadata: Metadata = { title: "Edit service" };
 export const dynamic = "force-dynamic";

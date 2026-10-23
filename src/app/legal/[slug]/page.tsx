@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { DEFAULT_CUSTOMER_CANCEL_TIERS, POLICY_DEFAULTS } from "@/domain/policy";
-import { getSettings } from "@/lib/settings";
+import { DEFAULT_CUSTOMER_CANCEL_TIERS, POLICY_DEFAULTS } from "../../../domain/policy";
+import { getSettings } from "../../../lib/settings";
 
 export const dynamic = "force-dynamic";
 const TITLES: Record<string, string> = { terms: "Terms of service", privacy: "Privacy policy", cancellation: "Cancellation and refund policy", disputes: "Dispute policy" };

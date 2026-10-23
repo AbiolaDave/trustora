@@ -1,10 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireUser } from "@/lib/auth/server";
-import { Payment } from "@/models/payment";
-import { Booking } from "@/models/booking";
-import { EmptyState, Money, PageHeader, dateTime } from "@/components/ui";
+import { connectDb } from "../../../lib/db";
+import { requireUser } from "../../../lib/auth/server";
+import { Payment } from "../../../models/payment";
+import { Booking } from "../../../models/booking";
+import { EmptyState, Money, PageHeader, dateTime } from "../../../components/ui";
 
 export const metadata: Metadata = { title: "Payment history" };
 export const dynamic = "force-dynamic";

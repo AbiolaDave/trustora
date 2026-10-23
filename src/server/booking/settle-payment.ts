@@ -1,8 +1,8 @@
 import { Types } from "mongoose";
-import { transition } from "@/domain/booking-state";
-import { checkChargeMatches, type ProviderCharge } from "@/domain/webhook";
-import { Booking } from "@/models/booking";
-import { Payment } from "@/models/payment";
+import { transition } from "../../domain/booking-state";
+import { checkChargeMatches, type ProviderCharge } from "../../domain/webhook";
+import { Booking } from "../../models/booking";
+import { Payment } from "../../models/payment";
 import { makeHoldPermanent } from "./reserve";
 
 export type SettleResult =

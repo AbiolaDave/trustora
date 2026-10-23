@@ -1,13 +1,13 @@
 import { Types } from "mongoose";
-import { transition, type Actor, type BookingEvent } from "@/domain/booking-state";
-import { refundForCancellation, POLICY_DEFAULTS } from "@/domain/policy";
-import { Booking } from "@/models/booking";
-import { Payment } from "@/models/payment";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Payout } from "@/models/misc";
-import { SlotReservation } from "@/models/booking";
-import { getPaymentProvider } from "@/lib/payments/provider";
-import { getSettings } from "@/lib/settings";
+import { transition, type Actor, type BookingEvent } from "../../domain/booking-state";
+import { refundForCancellation, POLICY_DEFAULTS } from "../../domain/policy";
+import { Booking } from "../../models/booking";
+import { Payment } from "../../models/payment";
+import { ArtisanProfile } from "../../models/artisan-profile";
+import { Payout } from "../../models/misc";
+import { SlotReservation } from "../../models/booking";
+import { getPaymentProvider } from "../../lib/payments/provider";
+import { getSettings } from "../../lib/settings";
 import { releaseSlots } from "./reserve";
 import { randomBytes } from "node:crypto";
 

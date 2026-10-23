@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { User } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { featureArtisanAction, setUserStatusAction } from "@/server/actions/admin";
-import { Flash, PageHeader, VerifiedBadge, dateOnly } from "@/components/ui";
-import { escapeRegex, first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { User } from "../../../models/user";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { featureArtisanAction, setUserStatusAction } from "../../../server/actions/admin";
+import { Flash, PageHeader, VerifiedBadge, dateOnly } from "../../../components/ui";
+import { escapeRegex, first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Users" };
 export const dynamic = "force-dynamic";

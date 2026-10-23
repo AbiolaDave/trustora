@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { User } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Booking } from "@/models/booking";
-import { Payment } from "@/models/payment";
-import { Dispute, Payout } from "@/models/misc";
-import { Flash, Money, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../lib/db";
+import { User } from "../../models/user";
+import { ArtisanProfile } from "../../models/artisan-profile";
+import { Booking } from "../../models/booking";
+import { Payment } from "../../models/payment";
+import { Dispute, Payout } from "../../models/misc";
+import { Flash, Money, PageHeader } from "../../components/ui";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Admin overview" };
 export const dynamic = "force-dynamic";

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { searchServices, type SearchParams } from "@/server/search";
-import { getCategories, getLaunchLocations, pretty } from "@/server/queries";
-import { EmptyState, Pager, Rating, VerifiedBadge, Money } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { searchServices, type SearchParams } from "../../server/search";
+import { getCategories, getLaunchLocations, pretty } from "../../server/queries";
+import { EmptyState, Pager, Rating, VerifiedBadge, Money } from "../../components/ui";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Find a service" };
 export const dynamic = "force-dynamic";

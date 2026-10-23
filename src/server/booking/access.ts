@@ -1,7 +1,7 @@
-import { connectDb } from "@/lib/db";
-import { objectId } from "@/lib/validation";
-import { Booking } from "@/models/booking";
-import { ArtisanProfile } from "@/models/artisan-profile";
+import { connectDb } from "../../lib/db";
+import { objectId } from "../../lib/validation";
+import { Booking } from "../../models/booking";
+import { ArtisanProfile } from "../../models/artisan-profile";
 
 /** Returns the booking only if this user is its customer (side "customer") or its artisan (side "artisan"). Otherwise null. */
 export async function getBookingFor(userId: unknown, side: "customer" | "artisan", id: string) {

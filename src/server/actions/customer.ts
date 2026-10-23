@@ -1,11 +1,11 @@
 "use server";
-import { connectDb } from "@/lib/db";
-import { fail, done } from "@/lib/flash";
-import { requireUser } from "@/lib/auth/server";
-import { phone, addressSchema, objectId } from "@/lib/validation";
-import { User } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { Notification } from "@/models/misc";
+import { connectDb } from "../../lib/db";
+import { fail, done } from "../../lib/flash";
+import { requireUser } from "../../lib/auth/server";
+import { phone, addressSchema, objectId } from "../../lib/validation";
+import { User } from "../../models/user";
+import { ArtisanProfile } from "../../models/artisan-profile";
+import { Notification } from "../../models/misc";
 
 const str = (f: FormData, k: string) => (f.get(k) ?? "").toString();
 

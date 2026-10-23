@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireUser } from "@/lib/auth/server";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { toggleSavedArtisanAction } from "@/server/actions/customer";
-import { EmptyState, Flash, PageHeader, Rating, VerifiedBadge } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { requireUser } from "../../../lib/auth/server";
+import { ArtisanProfile } from "../../../models/artisan-profile";
+import { toggleSavedArtisanAction } from "../../../server/actions/customer";
+import { EmptyState, Flash, PageHeader, Rating, VerifiedBadge } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Saved artisans" };
 export const dynamic = "force-dynamic";

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { requireArtisan } from "@/lib/auth/server";
-import { saveAvailabilityAction } from "@/server/actions/artisan";
-import { Flash, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { requireArtisan } from "../../../lib/auth/server";
+import { saveAvailabilityAction } from "../../../server/actions/artisan";
+import { Flash, PageHeader } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Availability" };
 export const dynamic = "force-dynamic";

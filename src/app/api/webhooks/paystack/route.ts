@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { env } from "@/lib/env";
-import { connectDb } from "@/lib/db";
-import { isValidPaystackSignature } from "@/domain/webhook";
-import { settleVerifiedCharge } from "@/server/booking/settle-payment";
-import { Booking } from "@/models/booking";
-import { Payment } from "@/models/payment";
-import { ArtisanProfile } from "@/models/artisan-profile";
-import { notify } from "@/lib/notify";
+import { env } from "../../../../lib/env";
+import { connectDb } from "../../../../lib/db";
+import { isValidPaystackSignature } from "../../../../domain/webhook";
+import { settleVerifiedCharge } from "../../../../server/booking/settle-payment";
+import { Booking } from "../../../../models/booking";
+import { Payment } from "../../../../models/payment";
+import { ArtisanProfile } from "../../../../models/artisan-profile";
+import { notify } from "../../../../lib/notify";
 
 export const dynamic = "force-dynamic";
 

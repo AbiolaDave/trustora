@@ -1,7 +1,7 @@
 import { createHmac } from "node:crypto";
 import { describe, expect, it } from "vitest";
-import { bucketsFor, fitsWorkingHours, openSlots } from "@/domain/availability";
-import { checkChargeMatches, isValidPaystackSignature } from "@/domain/webhook";
+import { bucketsFor, fitsWorkingHours, openSlots } from "../src/domain/availability";
+import { checkChargeMatches, isValidPaystackSignature } from "../src/domain/webhook";
 
 // Monday 2030-01-07, 09:00 Lagos time = 08:00 UTC
 const monday9 = new Date("2030-01-07T08:00:00Z");

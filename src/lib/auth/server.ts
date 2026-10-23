@@ -2,8 +2,8 @@ import "server-only";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { connectDb } from "../db";
-import { User, type UserDoc } from "@/models/user";
-import { ArtisanProfile } from "@/models/artisan-profile";
+import { User, type UserDoc } from "../../models/user";
+import { ArtisanProfile } from "../../models/artisan-profile";
 import {
   SESSION_COOKIE,
   cookieOptions,

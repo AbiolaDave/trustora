@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
-import { AuthCard } from "@/components/auth-card";
-import { Field, Flash } from "@/components/ui";
-import { loginAction } from "@/server/actions/auth";
-import { getCurrentUser } from "@/lib/auth/server";
-import { first } from "@/lib/validation";
+import { AuthCard } from "../../components/auth-card";
+import { Field, Flash } from "../../components/ui";
+import { loginAction } from "../../server/actions/auth";
+import { getCurrentUser } from "../../lib/auth/server";
+import { first } from "../../lib/validation";
 
 export const metadata: Metadata = { title: "Log in" };
 export const dynamic = "force-dynamic";

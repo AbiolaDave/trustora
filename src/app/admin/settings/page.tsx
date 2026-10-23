@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { getSettings } from "@/lib/settings";
-import { Location } from "@/models/misc";
-import { koboToNaira } from "@/lib/money";
-import { saveLocationAction, saveSettingsAction } from "@/server/actions/admin";
-import { Field, Flash, PageHeader } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { getSettings } from "../../../lib/settings";
+import { Location } from "../../../models/misc";
+import { koboToNaira } from "../../../lib/money";
+import { saveLocationAction, saveSettingsAction } from "../../../server/actions/admin";
+import { Field, Flash, PageHeader } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Fees and settings" };
 export const dynamic = "force-dynamic";

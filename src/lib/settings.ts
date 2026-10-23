@@ -1,7 +1,7 @@
 import { connectDb } from "./db";
-import { PlatformSettings } from "@/models/platform-settings";
-import type { FeeSettings } from "@/domain/pricing";
-import type { RefundTier } from "@/domain/policy";
+import { PlatformSettings } from "../models/platform-settings";
+import type { FeeSettings } from "../domain/pricing";
+import type { RefundTier } from "../domain/policy";
 
 export interface Settings extends FeeSettings { launchCities: string[]; cancelTiers: RefundTier[]; settlement: "manual_payout" | "paystack_split" }
 

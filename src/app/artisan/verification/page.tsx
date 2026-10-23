@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { requireArtisan } from "@/lib/auth/server";
-import { submitVerificationAction } from "@/server/actions/artisan";
-import { Flash, PageHeader, VerifiedBadge } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { requireArtisan } from "../../../lib/auth/server";
+import { submitVerificationAction } from "../../../server/actions/artisan";
+import { Flash, PageHeader, VerifiedBadge } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Verification" };
 export const dynamic = "force-dynamic";

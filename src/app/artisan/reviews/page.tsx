@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { connectDb } from "@/lib/db";
-import { requireArtisan } from "@/lib/auth/server";
-import { Review } from "@/models/misc";
-import { reportReviewAction } from "@/server/actions/booking";
-import { EmptyState, Flash, PageHeader, Rating, dateOnly } from "@/components/ui";
-import { first } from "@/lib/validation";
+import { connectDb } from "../../../lib/db";
+import { requireArtisan } from "../../../lib/auth/server";
+import { Review } from "../../../models/misc";
+import { reportReviewAction } from "../../../server/actions/booking";
+import { EmptyState, Flash, PageHeader, Rating, dateOnly } from "../../../components/ui";
+import { first } from "../../../lib/validation";
 
 export const metadata: Metadata = { title: "Reviews" };
 export const dynamic = "force-dynamic";

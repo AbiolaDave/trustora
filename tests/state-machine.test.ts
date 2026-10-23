@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { allowedEvents, InvalidTransitionError, transition } from "@/domain/booking-state";
+import { allowedEvents, InvalidTransitionError, transition } from "../src/domain/booking-state";
 
 const fixed = { pricingModel: "fixed" as const };
 const quote = { pricingModel: "quote" as const };
