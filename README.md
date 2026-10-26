@@ -38,6 +38,7 @@ notepad .env.local
 | `GMAIL_USER`, `GMAIL_APP_PASSWORD` | Optional. See "Gmail" below. Without them, emails are printed in the PowerShell window |
 | `CRON_SECRET` | Any long random string (for the expiry job) |
 | `SEED_ADMIN_EMAIL`, `SEED_ADMIN_PASSWORD` | Your admin login (password 10+ characters) |
+| `CLOUD_NAME`, `CLOUD_API_KEY`, `CLOUD_API_SECRET` | Cloudinary credentials for private uploads. Set all three; find them in the Cloudinary dashboard. |
 
 ### MongoDB Atlas
 
@@ -113,7 +114,7 @@ On Vercel, add a Cron Job for that path. Elsewhere use cron-job.org or similar.
 3. In Atlas Network Access allow Vercel (simplest for MVP: `0.0.0.0/0` with a strong database password).
 4. Run `npm run seed` once against the production database from your machine.
 5. Configure the Paystack webhook and the cron job.
-6. **Before launch:** connect a real private file store (see below).
+6. Uploads use Cloudinary when all three Cloudinary credentials are set. Configure them in the deployment environment before launch.
 
 ## 8. How it is organised
 
@@ -137,7 +138,7 @@ Key decisions (plain English):
 
 ## 9. Still needs your credentials or decisions
 
-- **Private file storage for production** (ID documents and job photos). Dev saves to `.private-uploads/`. Production refuses uploads until you implement a provider in `src/lib/storage.ts` (S3, Cloudflare R2, or Cloudinary private uploads).
+- **Private file storage:** ID documents and job photos are uploaded to Cloudinary as authenticated assets when `CLOUD_NAME`, `CLOUD_API_KEY` and `CLOUD_API_SECRET` are set. The app serves files only through its authenticated `/api/files` route. Without Cloudinary credentials, development saves files to `.private-uploads/`; production refuses uploads.
 - **Paystack live account** and webhook URL.
 - **Email provider** beyond Gmail for real volume.
 - **Artisan payouts are manual** (admin transfers from the bank, then records the reference). Automatic payouts need Paystack Transfers or Split/Subaccounts, which require Paystack's approval and onboarding.

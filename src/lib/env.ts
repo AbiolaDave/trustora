@@ -12,7 +12,9 @@ const schema = z.object({
   APP_NAME: z.string().default("Trustora"),
   CRON_SECRET: z.string().optional(),
   NEXT_PUBLIC_WHATSAPP_NUMBER: z.string().optional(),
-  UPLOAD_PROVIDER_CREDENTIALS: z.string().optional(),
+  CLOUD_API_KEY: z.string().optional(),
+  CLOUD_NAME: z.string().optional(),
+  CLOUD_API_SECRET: z.string().optional(),
 });
 
 export const env = schema.parse(process.env);
